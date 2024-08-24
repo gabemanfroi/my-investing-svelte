@@ -1,0 +1,20 @@
+query InitialPage{
+    getUserPortfolio(getUserPortfolioRequest: {userId: 8}) {
+        portfolio {
+            assets {
+                averagePrice
+                id
+                cumulativeTotal
+                ticker
+                totalAmount
+            }
+        }
+    }
+    listAssets(listAssetsRequest: {query: ""}) {
+        assets {
+            id
+            ticker
+        }
+    }
+}
+
